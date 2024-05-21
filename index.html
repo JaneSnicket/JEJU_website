@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Discover Jeju: A Journey Through Nature, Culture, and Adventure - Homepage</title>
+    <link id="default-style" href="css/1.css" rel="stylesheet" type="text/css">
+    <link id="alternative-style" href="css/alternative.css" rel="stylesheet" type="text/css" disabled>
+    <script>
+        function switchStyle(styleId) {
+            document.getElementById('default-style').disabled = true;
+            document.getElementById('alternative-style').disabled = true;
+
+            if (styleId === 'default') {
+                document.getElementById('default-style').disabled = false;
+            } else if (styleId === 'alternative') {
+                document.getElementById('alternative-style').disabled = false;
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <h1>Discover Jeju: A Journey Through Nature, Culture, and Adventure</h1>
+    <nav id="mainmenu">
+        <b>Homepage</b> | <a href="jeju_attractions.html">Jeju Attractions</a> | <a href="culture&history.html">Culutre & History</a> | <a href="jeju_cuisine.html">Jeju Cuisine</a> | <a href="form.html">Form</a>
+    </nav>
+    <div>
+        <button onclick="switchStyle('default')">Default Style</button>
+        <button onclick="switchStyle('alternative')">Alternative Style</button>
+    </div>
+</header>
+<div id="introduction">
+    <article>
+        <h2>Introduction</h2>
+        <p>
+            <b>Welcome to the enchanting island of Jeju, a premier destination where nature's beauty meets rich cultural heritage and endless adventure.</b> From the majestic Hallasan Mountain to the serene beaches of Hyeopjae, Jeju Island offers a diverse landscape that captivates the heart of every traveler. Dive into the island's unique culture through traditional villages and experience the vibrant local festivals that celebrate Jeju's history and traditions. Whether you're seeking a peaceful retreat in nature, a deep dive into cultural wonders, or thrilling outdoor activities, Jeju Island promises an unforgettable journey for all.
+        </p>
+    </article>
+    <nav id="pagemenu">
+        <ol>
+            <li><a href="jeju_attractions.html">Jeju Attractions</a></li>
+            <li><a href="culture&history.html">Culture & History</a></li>
+            <li><a href="jeju_cuisine.html">Jeju Cuisine</a></li>
+        </ol>
+    </nav>
+</div>
+<footer>
+    <address>
+        <p>Author: JE Hyejeong (<a href="mailto:hyejeongje2219@gmail.com">hyejeongje2219@gmail.com</a>)<br>
+        565 Seoljuk-ro, Bukgu, Gwangju, South Korea</p>
+    </address>
+</footer>
+</body>
+</html>
